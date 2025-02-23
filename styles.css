@@ -1,0 +1,593 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* -----header start----- */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: orangered;
+    padding: 5px;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.header-name>h1 {
+    font-size: 40px;
+}
+
+.header-nav>ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 10px;
+}
+
+.header-nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.header-nav>ul>li>a:hover {
+    border-bottom: 5px groove white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.header-comm {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header-comm a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-comm:hover {
+    background-color: rgb(207, 91, 49);
+    color: white;
+    transform: scale(1.1);
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+.header-comm:active{
+    border-color: greenyellow;
+}
+
+/* -----header end----- */
+
+/* -----about start----- */
+
+.about {
+    background-color: orangered;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    color: white;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+.circle{
+    border: 2px solid white;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle>img{
+    height: 95%;
+    width: 95%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.about-detail {
+    padding-top: 70px;
+}
+
+.about-detail>h1 {
+    font-size: 50px;
+    font-family:cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.about-detail>h3 {
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px white;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 25px ;
+}
+
+.row2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.row2 p{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.row2 h2 {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.row2 h2:hover{
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+/* -----about end----- */
+
+/* -----skils start----- */
+
+.skills {
+    text-align: center;
+}
+
+.skills-txt {
+    background-color: black;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.mar {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+
+.box{
+    background-color: rgb(207, 199, 199);
+    margin: 20px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 5px rgb(122, 106, 106);
+    border-radius: 20px;
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.box>i{
+    font-size: 120px;
+}
+
+.box>h2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.mar-mobile{
+    display: none;
+}
+
+/* -----skills end----- */
+
+/* -----work start----- */
+.work{
+    margin-top: 150px;
+}
+
+.work-txt{
+    text-align: start;
+    margin-left: 100px;
+}
+.projects {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.projects a {
+    text-decoration: none;
+}
+.probox {
+    height: fit-content;
+    width: fit-content;
+    flex-basis: 40%;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.probox>h2 {
+    background-color: rgb(238, 107, 14);
+    color: rgb(34, 22, 1);
+    text-shadow: 1px 1px 0px white;
+    margin-top: 0%;
+    padding: 4px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.probox img {
+    height: 90%;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.5s;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.probox:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 3px grey;
+}
+
+.probox:hover h2{
+    letter-spacing: 10px;
+    background-color: black;
+    color: chocolate;
+    text-shadow: 1px 1px 1px white;
+}
+.contact {
+    margin-top: 100px;
+}
+
+.contact>h1{
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.all-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-box {
+    height: 200px;
+    width: 350px;
+    background-color: rgb(213, 209, 209);
+    text-align: center;
+    padding: 40px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 5px grey;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.301);
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-box>i {
+    font-size: 50px;
+}
+
+.contact-box>h2 {
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.contact-box>p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.contact-box:hover{
+    background-color: black;
+    color: white;
+    transform: scale(0.95);
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 4px black;
+}
+
+.contact-box:hover p a{
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px white;
+    color: white;
+}
+
+.contact-box>p>a:hover {
+    color: grey;
+    text-shadow: none;
+}
+
+/* -----contact end----- */
+
+/* -----footer start----- */
+
+footer {
+    background-color: black;
+    height: fit-content;
+    color: white;
+}
+
+.footer-row1 {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 40px 300px 50px 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-row1 h1 {
+    color: orangered;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.footer-row1 p {
+    padding-left: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer-row1 button {
+    padding: 15px;
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+}
+.footer-row1 button>a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-row1 button:hover {
+    transform: scale(0.95);
+    background-color: white;
+    color: orangered;
+}
+
+.footer-row1 button:hover a {
+    color: orangered;
+}
+
+.footer-row2{
+    display: flex;
+    justify-content:space-between;
+    padding: 50px 50px 100px 150px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.copy span {
+    color: orangered;
+}
+
+.footer-nav>ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-nav>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.up{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0px 0px 5px 0.1px white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.up a {
+    color: white;
+    transition: 0.5s;
+}
+
+.up:hover{
+    background-color: rgb(255, 38, 0);
+    box-shadow: none;
+    border: 2px solid black;
+}
+
+.up:hover a {
+    color: black;
+}
+
+@media screen and (max-width:800px) {
+    .about{
+        text-align: center;
+    }
+    
+    .row1{
+        padding: 0%;
+        padding-top: 50px;
+        gap: 10px;
+    }
+    .about-detail>h1{
+        text-align: center;
+    }
+    .work{
+        margin: 30px;
+    }
+    .work-txt{
+        text-align: center;
+        margin: 0%;
+    }
+    .probox>h2{
+        font-size: 20px;
+        padding: 6px;
+        letter-spacing: 0px;
+    }
+    .contact{
+        margin: 30px;
+        border: 2px solid black;
+    }
+    .contact-box{
+        flex-basis: 100%;
+        margin: 10px 50px;
+    }
+
+    .probox:hover h2{
+        letter-spacing: 0px;
+    }
+
+    .footer-row1{
+        text-align: center;
+        padding: 20px;
+    }
+
+    .quotes {
+        flex-basis: 100%;
+    }
+    .resume {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-row2{
+        padding: 30px 0px 50px 0px;
+    }
+    .copy{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .up{
+        display: none;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .header-comm{
+        height: 50px;
+        margin-top: 5px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .about-detail h1 {
+        font-size: 40px;
+    }
+    .about-detail h3 {
+        font-size: 23px;
+    }
+    .det{
+        padding-inline: 10px;
+        padding-block: 10px;
+    }
+    .det p{
+        margin-bottom: 10px;
+    }
+    .email h2{
+        font-size: 20px;
+    }
+    .row2 h2:hover{
+        letter-spacing: 0px;
+    }
+    .mar{
+        display: none;
+    }
+    .mar-mobile{
+        display: block;
+    }
+    .box{
+        width: 90%;
+    }
+    .work{
+        width: 100%;
+        margin: 0%;
+        margin-top: 100px;
+    }
+    .work-txt h1{
+        background-color: rgb(208, 221, 245);
+        width: 100%;
+    }
+    .probox{
+        flex-basis: 100%;
+        margin: 0px 20px;
+    }
+    .mail{
+        padding: 0%;
+        font-size: 13px;
+        line-height: 35px;
+        padding: 5px;
+    }
+    .l-in{
+        height: fit-content;
+        padding-bottom: 15px;
+    }
+    .quotes p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .copy {
+        font-size: 15px;
+    }
+    .up{
+        display: none;
+    }
+}
